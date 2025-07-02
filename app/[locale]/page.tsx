@@ -12,7 +12,7 @@ import { TeamSection } from "@/components/layout/sections/team";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
 
 export const metadata = {
-  title: "Shadcn - Landing template",
+  title: "Shadcn 12- Landing template",
   description: "Free Shadcn landing page for developers",
   openGraph: {
     type: "website",

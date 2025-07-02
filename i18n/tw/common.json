@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "title": "ShadcnLanding",
+    "description": "來自Shadcn的登陸頁模板"
+  },
+  "header": {
+    "navigation": {
+      "routes": [
+        {
+          "key": "testimonials",
+          "label": "客戶評價",
+          "href": "#testimonials"
+        },
+        {
+          "key": "team",
+          "label": "團隊介紹",
+          "href": "#team"
+        },
+        {
+          "key": "contact",
+          "label": "聯絡我們",
+          "href": "#contact"
+        },
+        {
+          "key": "faq",
+          "label": "常見問題",
+          "href": "#faq"
+        }
+      ],
+      "features": {
+        "label": "功能特性",
+        "dropdown": true,
+        "href": "#features",
+        "items": [
+          {
+            "title": "展示價值",
+            "description": "突出您的產品如何解決用戶問題。"
+          },
+          {
+            "title": "建立信任",
+            "description": "利用社會證明元素建立信任和可信度。"
+          },
+          {
+            "title": "獲取線索",
+            "description": "讓您的潛在客戶表單在視覺上更具吸引力和策略性。"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -22,61 +22,32 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import { ToggleTheme } from "./toogle-theme";
-
-interface RouteProps {
-  href: string;
-  label: string;
-}
-
-interface FeatureProps {
-  title: string;
-  description: string;
-}
-
-const routeList: RouteProps[] = [
-  {
-    href: "#testimonials",
-    label: "Testimonials",
-  },
-  {
-    href: "#team",
-    label: "Team",
-  },
-  {
-    href: "#contact",
-    label: "Contact",
-  },
-  {
-    href: "#faq",
-    label: "FAQ",
-  },
-];
-
-const featureList: FeatureProps[] = [
-  {
-    title: "Showcase Your Value ",
-    description: "Highlight how your product solves user problems.",
-  },
-  {
-    title: "Build Trust",
-    description:
-      "Leverages social proof elements to establish trust and credibility.",
-  },
-  {
-    title: "Capture Leads",
-    description:
-      "Make your lead capture form visually appealing and strategically.",
-  },
-];
+import { LanguageSwitcher } from "./LanguageSwitcher";
+import { useLangProviderContext } from "@/context/useLangProvider";
+import { website } from "@/configs/website";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const { locale, $t } = useLangProviderContext();
+
+  // 安全检查，防止数据未加载时报错
+  if (!$t?.common?.header?.navigation) {
+    return null; // 或者返回loading状态
+  }
+
+  const navigation = $t.common.header.navigation;
+  const routeList = navigation.routes;
+  const featuresConfig = navigation.features;
+
   return (
-    <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card">
-      <Link href="/" className="font-bold text-lg flex items-center">
-        <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
-        Shadcn
-      </Link>
+    <header className="backdrop-blur-sm bg-background/80 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl mx-auto sticky top-0 z-40 flex justify-between items-center px-4 py-3 transition-all duration-300">
+      {website.logo.show && (
+        <Link href="/" className="font-bold text-lg flex items-center">
+          <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
+          {website.logo.name}
+        </Link>
+      )}
+
       {/* <!-- Mobile --> */}
       <div className="flex items-center lg:hidden">
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -94,14 +65,27 @@ export const Navbar = () => {
             <div>
               <SheetHeader className="mb-4 ml-4">
                 <SheetTitle className="flex items-center">
-                  <Link href="/" className="flex items-center">
-                    <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
-                    Shadcn
-                  </Link>
+                  {website.logo.show && (
+                    <Link href="/" className="flex items-center">
+                      <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
+                      {website.logo.name}
+                    </Link>
+                  )}
                 </SheetTitle>
               </SheetHeader>
 
               <div className="flex flex-col gap-2">
+                {/* Features mobile menu item */}
+                <Button
+                  onClick={() => setIsOpen(false)}
+                  asChild
+                  variant="ghost"
+                  className="justify-start text-base"
+                >
+                  <Link href={featuresConfig.href}>{featuresConfig.label}</Link>
+                </Button>
+
+                {/* Other navigation items */}
                 {routeList.map(({ href, label }) => (
                   <Button
                     key={href}
@@ -118,8 +102,8 @@ export const Navbar = () => {
 
             <SheetFooter className="flex-col sm:flex-col justify-start items-start">
               <Separator className="mb-2" />
-
-              <ToggleTheme />
+              {website.themeSwitcher.open && <ToggleTheme />}
+              <LanguageSwitcher locale={locale} />
             </SheetFooter>
           </SheetContent>
         </Sheet>
@@ -127,43 +111,61 @@ export const Navbar = () => {
 
       {/* <!-- Desktop --> */}
       <NavigationMenu className="hidden lg:block mx-auto">
-        <NavigationMenuList>
+        <NavigationMenuList className="gap-1">
+          {/* Features section - dropdown or link based on config */}
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="bg-card text-base">
-              Features
-            </NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <div className="grid w-[600px] grid-cols-2 gap-5 p-4">
-                <Image
-                  src="https://avatars.githubusercontent.com/u/75042455?v=4"
-                  alt="RadixLogo"
-                  className="h-full w-full rounded-md object-cover"
-                  width={600}
-                  height={600}
-                />
-                <ul className="flex flex-col gap-2">
-                  {featureList.map(({ title, description }) => (
-                    <li
-                      key={title}
-                      className="rounded-md p-3 text-sm hover:bg-muted"
-                    >
-                      <p className="mb-1 font-semibold leading-none text-foreground">
-                        {title}
-                      </p>
-                      <p className="line-clamp-2 text-muted-foreground">
-                        {description}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </NavigationMenuContent>
+            {featuresConfig.dropdown ? (
+              <>
+                <NavigationMenuTrigger className="bg-transparent hover:bg-muted/30 text-base">
+                  {featuresConfig.label}
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <div className="grid w-[600px] grid-cols-2 gap-5 p-4">
+                    <Image
+                      src="https://avatars.githubusercontent.com/u/75042455?v=4"
+                      alt="RadixLogo"
+                      className="h-full w-full rounded-md object-cover"
+                      width={600}
+                      height={600}
+                    />
+                    <ul className="flex flex-col gap-2">
+                      {featuresConfig.items.map(({ title, description }) => (
+                        <li
+                          key={title}
+                          className="rounded-md p-3 text-sm hover:bg-muted/20 cursor-pointer transition-colors"
+                        >
+                          <p className="mb-1 font-semibold leading-none text-foreground">
+                            {title}
+                          </p>
+                          <p className="line-clamp-2 text-muted-foreground">
+                            {description}
+                          </p>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </NavigationMenuContent>
+              </>
+            ) : (
+              <NavigationMenuLink asChild>
+                <Link
+                  href={featuresConfig.href}
+                  className="text-base px-4 py-2 rounded-md hover:bg-muted/20 transition-colors"
+                >
+                  {featuresConfig.label}
+                </Link>
+              </NavigationMenuLink>
+            )}
           </NavigationMenuItem>
 
+          {/* Other navigation items */}
           <NavigationMenuItem>
             {routeList.map(({ href, label }) => (
               <NavigationMenuLink key={href} asChild>
-                <Link href={href} className="text-base px-2">
+                <Link
+                  href={href}
+                  className="text-base px-4 py-2 rounded-md hover:bg-muted/20 transition-colors"
+                >
                   {label}
                 </Link>
               </NavigationMenuLink>
@@ -172,8 +174,9 @@ export const Navbar = () => {
         </NavigationMenuList>
       </NavigationMenu>
 
-      <div className="hidden lg:flex">
-        <ToggleTheme />
+      <div className="hidden lg:flex items-center gap-2">
+        <LanguageSwitcher locale={locale} />
+        {website.themeSwitcher.open && <ToggleTheme />}
 
         <Button asChild size="sm" variant="ghost" aria-label="View on GitHub">
           <Link

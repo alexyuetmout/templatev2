@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "title": "ShadcnLanding",
+    "description": "来自Shadcn的落地页模板"
+  },
+  "header": {
+    "navigation": {
+      "routes": [
+        {
+          "key": "testimonials",
+          "label": "客户评价",
+          "href": "#testimonials"
+        },
+        {
+          "key": "team",
+          "label": "团队介绍",
+          "href": "#team"
+        },
+        {
+          "key": "contact",
+          "label": "联系我们",
+          "href": "#contact"
+        },
+        {
+          "key": "faq",
+          "label": "常见问题",
+          "href": "#faq"
+        }
+      ],
+      "features": {
+        "label": "功能特性",
+        "dropdown": false,
+        "href": "#features",
+        "items": [
+          {
+            "title": "展示价值",
+            "description": "突出您的产品如何解决用户问题。"
+          },
+          {
+            "title": "建立信任",
+            "description": "利用社会证明元素建立信任和可信度。"
+          },
+          {
+            "title": "获取线索",
+            "description": "让您的潜在客户表单在视觉上更具吸引力和策略性。"
+          }
+        ]
+      }
+    }
+  }
+}

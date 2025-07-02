@@ -1,0 +1,28 @@
+{
+  "hero": {
+    "badge": {
+      "new": "新功能",
+      "announcement": "全新設計現已上線！"
+    },
+    "title": {
+      "prefix": "體驗最棒的",
+      "brand": "Shadcn", 
+      "suffix": "著陸頁"
+    },
+    "description": "我們不僅僅是一個工具，更是一個充滿激情的創作者社群。獲取獨家資源、教程和技術支援。",
+    "buttons": {
+      "getStarted": "立即開始",
+      "repository": "GitHub 倉庫"
+    },
+    "links": {
+      "getStartedHref": "#pricing",
+      "repositoryHref": "https://github.com/nobruf/shadcn-landing-page.git"
+    },
+    "image": {
+      "show": true,
+      "lightSrc": "/hero-image-light.jpeg",
+      "darkSrc": "/hero-image-dark.jpeg",
+      "alt": "儀表板"
+    }
+  }
+}

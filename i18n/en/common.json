@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "title": "ShadcnLanding",
+    "description": "Landing template from Shadcn"
+  },
+  "header": {
+    "navigation": {
+      "routes": [
+        {
+          "key": "testimonials",
+          "label": "Testimonials",
+          "href": "#testimonials"
+        },
+        {
+          "key": "team",
+          "label": "Team",
+          "href": "#team"
+        },
+        {
+          "key": "contact",
+          "label": "Contact",
+          "href": "#contact"
+        },
+        {
+          "key": "faq",
+          "label": "FAQ",
+          "href": "#faq"
+        }
+      ],
+      "features": {
+        "label": "Features",
+        "dropdown": false,
+        "href": "#features",
+        "items": [
+          {
+            "title": "Showcase Your Value",
+            "description": "Highlight how your product solves user problems."
+          },
+          {
+            "title": "Build Trust",
+            "description": "Leverages social proof elements to establish trust and credibility."
+          },
+          {
+            "title": "Capture Leads",
+            "description": "Make your lead capture form visually appealing and strategically."
+          }
+        ]
+      }
+    }
+  }
+}

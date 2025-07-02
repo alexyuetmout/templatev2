@@ -1,0 +1,28 @@
+{
+  "hero": {
+    "badge": {
+      "new": "New",
+      "announcement": "Design is out now!"
+    },
+    "title": {
+      "prefix": "Experience the",
+      "brand": "Shadcn", 
+      "suffix": "landing page"
+    },
+    "description": "We're more than just a tool, we're a community of passionate creators. Get access to exclusive resources, tutorials, and support.",
+    "buttons": {
+      "getStarted": "Get Started",
+      "repository": "GitHub Repository"
+    },
+    "links": {
+      "getStartedHref": "#pricing",
+      "repositoryHref": "https://github.com/nobruf/shadcn-landing-page.git"
+    },
+    "image": {
+      "show": true,
+      "lightSrc": "/hero-image-light.jpeg",
+      "darkSrc": "/hero-image-dark.jpeg",
+      "alt": "dashboard"
+    }
+  }
+}
