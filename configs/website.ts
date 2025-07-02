@@ -18,4 +18,36 @@ export const website: WebsiteConfigTypes = {
   cache: {
     languageCacheTime: 2 * 60 * 60 * 1000,
   },
+  sponsors: {
+    items: [
+      {
+        icon: "Crown",
+        name: "Acmebrand",
+      },
+      {
+        icon: "Vegan",
+        name: "Acmelogo",
+      },
+      {
+        icon: "Ghost",
+        name: "Acmesponsor",
+      },
+      {
+        icon: "Puzzle",
+        name: "Acmeipsum",
+      },
+      {
+        icon: "Squirrel",
+        name: "Acme",
+      },
+      {
+        icon: "Cookie",
+        name: "Accmee",
+      },
+      {
+        icon: "Drama",
+        name: "Acmetech",
+      },
+    ],
+  },
 } 

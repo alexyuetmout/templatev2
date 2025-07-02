@@ -24,5 +24,37 @@
       "darkSrc": "/hero-image-dark.jpeg",
       "alt": "仪表板"
     }
+  },
+  "sponsors": {
+    "show": false,
+    "title": "我们的白金赞助商"
+  },
+  "benefits": {
+    "show": true,
+    "subtitle": "核心优势",
+    "title": "成功的捷径",
+    "description": "我们为您提供全面的解决方案，帮助您的业务快速成长，获得更多客户信任和更高的转化率。",
+    "items": [
+      {
+        "icon": "Blocks",
+        "title": "建立品牌信任",
+        "description": "通过专业的设计和优质的服务，快速建立客户对您品牌的信任感，提升品牌影响力。"
+      },
+      {
+        "icon": "LineChart",
+        "title": "获得更多潜在客户",
+        "description": "通过有效的营销策略和优化的用户体验，显著提升潜在客户的获取率。"
+      },
+      {
+        "icon": "Wallet",
+        "title": "提高转化率",
+        "description": "优化用户转化路径，提升访客到客户的转化效率，实现更高的投资回报率。"
+      },
+      {
+        "icon": "Sparkle",
+        "title": "测试营销创意",
+        "description": "提供A/B测试和数据分析工具，帮助您验证和优化各种营销创意和策略。"
+      }
+    ]
   }
 }

@@ -24,5 +24,37 @@
       "darkSrc": "/hero-image-dark.jpeg",
       "alt": "dashboard"
     }
+  },
+  "sponsors": {
+    "show": true,
+    "title": "Our Platinum Sponsors"
+  },
+  "benefits": {
+    "show": true,
+    "subtitle": "Benefits",
+    "title": "Your Shortcut to Success",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non ducimus reprehenderit architecto rerum similique facere odit deleniti necessitatibus quo quae.",
+    "items": [
+      {
+        "icon": "Blocks",
+        "title": "Build Brand Trust",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores."
+      },
+      {
+        "icon": "LineChart",
+        "title": "More Leads",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur."
+      },
+      {
+        "icon": "Wallet",
+        "title": "Higher Conversions",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam"
+      },
+      {
+        "icon": "Sparkle",
+        "title": "Test Marketing Ideas",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores."
+      }
+    ]
   }
 }

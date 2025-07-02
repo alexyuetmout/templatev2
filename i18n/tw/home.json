@@ -24,5 +24,37 @@
       "darkSrc": "/hero-image-dark.jpeg",
       "alt": "儀表板"
     }
+  },
+  "sponsors": {
+    "show": true,
+    "title": "我們的白金贊助商"
+  },
+  "benefits": {
+    "show": true,
+    "subtitle": "核心優勢",
+    "title": "成功的捷徑",
+    "description": "我們為您提供全面的解決方案，幫助您的業務快速成長，獲得更多客戶信任和更高的轉化率。",
+    "items": [
+      {
+        "icon": "Blocks",
+        "title": "建立品牌信任",
+        "description": "通過專業的設計和優質的服務，快速建立客戶對您品牌的信任感，提升品牌影響力。"
+      },
+      {
+        "icon": "LineChart",
+        "title": "獲得更多潛在客戶",
+        "description": "通過有效的營銷策略和優化的用戶體驗，顯著提升潛在客戶的獲取率。"
+      },
+      {
+        "icon": "Wallet",
+        "title": "提高轉化率",
+        "description": "優化用戶轉化路徑，提升訪客到客戶的轉化效率，實現更高的投資回報率。"
+      },
+      {
+        "icon": "Sparkle",
+        "title": "測試營銷創意",
+        "description": "提供A/B測試和數據分析工具，幫助您驗證和優化各種營銷創意和策略。"
+      }
+    ]
   }
 }

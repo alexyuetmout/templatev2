@@ -33,6 +33,12 @@ declare global {
     cache: {
       languageCacheTime: number | null
     }
+    sponsors: {
+      items: Array<{
+        icon: string
+        name: string
+      }>
+    }
   }
 }
 
