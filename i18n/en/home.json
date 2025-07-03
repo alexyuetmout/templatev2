@@ -2,17 +2,17 @@
   "hero": {
     "badge": {
       "new": "New",
-      "announcement": "Design is out now!"
+      "announcement": "AI Style Transfer Available!"
     },
     "title": {
-      "prefix": "Experience the",
-      "brand": "Shadcn", 
-      "suffix": "landing page"
+      "prefix": "Transform Photos with",
+      "brand": "FluxTools", 
+      "suffix": "AI Magic"
     },
-    "description": "We're more than just a tool, we're a community of passionate creators. Get access to exclusive resources, tutorials, and support.",
+    "description": "Transform your photos into stunning artwork with AI-powered style transfer. Upload, choose a style, and watch AI work its magic in seconds.",
     "buttons": {
-      "getStarted": "Get Started",
-      "repository": "GitHub Repository"
+      "getStarted": "Try Now",
+      "repository": "See Examples"
     },
     "links": {
       "getStartedHref": "#pricing",
@@ -26,148 +26,148 @@
     }
   },
   "sponsors": {
-    "show": true,
+    "show": false,
     "title": "Our Platinum Sponsors"
   },
   "benefits": {
     "show": true,
-    "subtitle": "Benefits",
-    "title": "Your Shortcut to Success",
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non ducimus reprehenderit architecto rerum similique facere odit deleniti necessitatibus quo quae.",
+    "subtitle": "Why Choose FluxTools",
+    "title": "AI-Powered Style Transfer",
+    "description": "Experience the future of photo editing with our advanced AI technology. Transform any image into stunning artwork in seconds.",
     "items": [
       {
-        "icon": "Blocks",
-        "title": "Build Brand Trust",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores."
+        "icon": "Zap",
+        "title": "Lightning Fast",
+        "description": "Transform your photos in just 10-15 seconds. No waiting, no complex setup - just instant AI magic."
       },
       {
-        "icon": "LineChart",
-        "title": "More Leads",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur."
+        "icon": "BadgeCheck",
+        "title": "Professional Quality",
+        "description": "Get high-resolution, professional-grade results that preserve your original image's essence while adding stunning artistic flair."
       },
       {
-        "icon": "Wallet",
-        "title": "Higher Conversions",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam"
+        "icon": "MousePointerClick",
+        "title": "Simple & Easy",
+        "description": "Just upload, select a style, and download. No technical skills required - anyone can create beautiful art."
       },
       {
-        "icon": "Sparkle",
-        "title": "Test Marketing Ideas",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores."
+        "icon": "Palette",
+        "title": "Multiple Styles",
+        "description": "Choose from anime, oil painting, watercolor, cyberpunk and more artistic styles to match your creative vision."
       }
     ]
   },
   "features": {
     "show": true,
-    "subtitle": "Features",
-    "title": "What Makes Us Different",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio facere tenetur.",
+    "subtitle": "How It Works",
+    "title": "Simple 3-Step Process",
+    "description": "Transform your photos into stunning artwork with our intuitive AI-powered platform. No technical expertise required - just creativity.",
     "items": [
       {
-        "icon": "TabletSmartphone",
-        "title": "Mobile Friendly",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur."
+        "icon": "Upload",
+        "title": "Upload Your Photo",
+        "description": "Simply drag and drop or click to upload your image. Supports JPG, PNG, and WEBP formats up to 10MB."
       },
       {
-        "icon": "BadgeCheck",
-        "title": "Social Proof",
-        "description": "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam."
+        "icon": "Palette",
+        "title": "Choose Art Style",
+        "description": "Select from our collection of artistic styles including anime, oil painting, watercolor, and cyberpunk."
       },
       {
-        "icon": "Goal",
-        "title": "Targeted Content",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam."
+        "icon": "Cpu",
+        "title": "AI Processing",
+        "description": "Our advanced AI algorithms analyze your image and apply the selected style while preserving important details."
       },
       {
-        "icon": "PictureInPicture",
-        "title": "Strong Visuals",
-        "description": "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam."
+        "icon": "Image",
+        "title": "High-Quality Output",
+        "description": "Get professional-grade results in high resolution, ready for social media, printing, or professional use."
       },
       {
-        "icon": "MousePointerClick",
-        "title": "Clear CTA",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur."
+        "icon": "Download",
+        "title": "Download & Share",
+        "description": "Download your transformed artwork instantly or share directly to social media platforms."
       },
       {
-        "icon": "Newspaper",
-        "title": "Clear Headline",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur."
+        "icon": "Layers",
+        "title": "Batch Processing",
+        "description": "Process multiple images at once with our batch feature. Perfect for large projects and professional workflows."
       }
     ]
   },
   "services": {
     "show": true,
-    "subtitle": "Services",
-    "title": "Grow Your Business",
-    "description": "From marketing and sales to operations and strategy, we have the expertise to help you achieve your goals.",
+    "subtitle": "Art Styles",
+    "title": "Choose Your Style",
+    "description": "Explore our curated collection of artistic styles. From classic art movements to modern digital aesthetics, find the perfect style for your vision.",
     "items": [
       {
-        "title": "Custom Domain Integration",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing.",
+        "title": "Anime Style",
+        "description": "Transform your photos into beautiful anime artwork with vibrant colors and distinctive character aesthetics.",
         "pro": false
       },
       {
-        "title": "Social Media Integrations",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, dicta.",
+        "title": "Oil Painting",
+        "description": "Create classic oil painting effects with rich textures and masterful brushwork reminiscent of Renaissance art.",
         "pro": false
       },
       {
-        "title": "Email Marketing Integrations",
-        "description": "Lorem dolor sit amet adipisicing.",
+        "title": "Watercolor",
+        "description": "Achieve delicate watercolor paintings with soft, flowing colors and artistic transparency effects.",
         "pro": false
       },
       {
-        "title": "SEO Optimization",
-        "description": "Lorem ipsum dolor sit amet consectetur.",
+        "title": "Cyberpunk",
+        "description": "Transform images into futuristic cyberpunk art with neon colors, digital glitch effects, and sci-fi aesthetics.",
         "pro": true
       }
     ]
   },
   "testimonials": {
     "show": true,
-    "subtitle": "Testimonials",
-    "title": "Hear What Our 1000+ Clients Say",
+    "subtitle": "User Reviews",
+    "title": "See What Our Users Created",
     "items": [
       {
         "image": "https://github.com/shadcn.png",
-        "name": "John Doe",
-        "userName": "Product Manager",
-        "comment": "Wow NextJs + Shadcn is awesome!. This template lets me change colors, fonts and images to match my brand identity.",
+        "name": "Sarah Chen",
+        "userName": "Digital Artist",
+        "comment": "FluxTools transformed my photography into stunning anime art! The quality is incredible and the process is so simple. I've been using it for all my social media content.",
         "rating": 5.0
       },
       {
         "image": "https://github.com/shadcn.png",
-        "name": "Sophia Collins",
-        "userName": "Cybersecurity Analyst",
-        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+        "name": "Marcus Rodriguez",
+        "userName": "Content Creator",
+        "comment": "As a content creator, I need unique visuals daily. FluxTools saves me hours of editing time while creating professional-quality artwork that my audience loves.",
         "rating": 4.8
       },
       {
         "image": "https://github.com/shadcn.png",
-        "name": "Adam Johnson",
-        "userName": "Chief Technology Officer",
-        "comment": "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "name": "Emily Watson",
+        "userName": "Marketing Manager",
+        "comment": "The cyberpunk style feature is amazing! I've transformed our entire campaign imagery with FluxTools. The results are consistently high-quality and eye-catching.",
         "rating": 4.9
       },
       {
         "image": "https://github.com/shadcn.png",
-        "name": "Ethan Parker",
-        "userName": "Data Scientist",
-        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "name": "Alex Kim",
+        "userName": "Photographer",
+        "comment": "I was skeptical about AI art tools, but FluxTools exceeded my expectations. The oil painting style makes my portrait photos look like classical masterpieces.",
         "rating": 5.0
       },
       {
         "image": "https://github.com/shadcn.png",
-        "name": "Ava Mitchell",
-        "userName": "IT Project Manager",
-        "comment": "Lorem ipsum dolor sit amet, tempor incididunt aliqua. Ut enim ad minim veniam, quis nostrud incididunt consectetur adipiscing elit.",
+        "name": "Jordan Thompson",
+        "userName": "Social Media Manager",
+        "comment": "FluxTools has revolutionized our social media strategy. The watercolor style is perfect for our brand aesthetic and the batch processing saves us so much time.",
         "rating": 5.0
       },
       {
         "image": "https://github.com/shadcn.png",
-        "name": "Isabella Reed",
-        "userName": "DevOps Engineer",
-        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "name": "Taylor Brooks",
+        "userName": "Graphic Designer",
+        "comment": "The speed and quality of FluxTools is unmatched. I can experiment with different artistic styles instantly and deliver unique designs to my clients faster than ever.",
         "rating": 4.9
       }
     ]
@@ -175,86 +175,86 @@
 
   "pricing": {
     "show": true,
-    "subtitle": "Pricing",
-    "title": "Get unlimitted access",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing reiciendis.",
+    "subtitle": "Simple Pricing",
+    "title": "Choose Your Plan",
+    "description": "Flexible monthly subscriptions to fit your creative needs. Cancel anytime, no long-term commitments.",
     "currency": {
       "symbol": "$",
       "period": "/month"
     },
     "plans": [
       {
-        "title": "Free",
+        "title": "Starter",
         "popular": false,
-        "price": 0,
-        "description": "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+        "price": 9,
+        "description": "Perfect for individuals and hobbyists who want to explore AI art.",
         "buttonText": "Start Free Trial",
         "benefitList": [
-          "1 team member",
-          "1 GB storage", 
-          "Upto 2 pages",
-          "Community support",
-          "AI assistance"
+          "50 transformations/month",
+          "All art styles included", 
+          "High resolution output",
+          "Standard processing speed",
+          "Email support"
         ]
       },
       {
-        "title": "Premium",
+        "title": "Creator",
         "popular": true,
-        "price": 45,
-        "description": "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-        "buttonText": "Get started",
+        "price": 29,
+        "description": "Best for content creators, marketers, and small businesses.",
+        "buttonText": "Get Started",
         "benefitList": [
-          "4 team member",
-          "8 GB storage",
-          "Upto 6 pages", 
-          "Priority support",
-          "AI assistance"
+          "500 transformations/month",
+          "All art styles included",
+          "Ultra-high resolution", 
+          "Fast processing",
+          "Priority support"
         ]
       },
       {
-        "title": "Enterprise",
+        "title": "Professional",
         "popular": false,
-        "price": 120,
-        "description": "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-        "buttonText": "Contact US",
+        "price": 99,
+        "description": "For agencies and professionals who need unlimited creative power.",
+        "buttonText": "Contact Us",
         "benefitList": [
-          "10 team member",
-          "20 GB storage",
-          "Upto 10 pages",
-          "Phone & email support",
-          "AI assistance"
+          "Unlimited transformations",
+          "All art styles + exclusive styles",
+          "Ultra-high resolution",
+          "Advanced batch processing",
+          "Dedicated account manager"
         ]
       }
     ]
   },
   "faq": {
     "show": true,
-    "subtitle": "FAQS",
-    "title": "Common Questions",
+    "subtitle": "FAQ",
+    "title": "Frequently Asked Questions",
     "items": [
       {
-        "question": "Is this template free?",
-        "answer": "Yes. It is a free NextJS Shadcn template.",
+        "question": "What is FluxTools?",
+        "answer": "FluxTools is an AI-powered image style transfer tool that transforms your photos into stunning artwork using various artistic styles like anime, oil painting, watercolor, and cyberpunk.",
         "value": "item-1"
       },
       {
-        "question": "Duis aute irure dolor in reprehenderit in voluptate velit?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam consectetur sapiente, iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+        "question": "What image formats are supported?",
+        "answer": "FluxTools supports JPG, PNG, and WEBP formats. Images can be up to 10MB in size. We recommend high-resolution images for the best transformation results.",
         "value": "item-2"
       },
       {
-        "question": "Lorem ipsum dolor sit amet Consectetur natus dolor minus quibusdam?",
-        "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis.",
+        "question": "How long does it take to transform an image?",
+        "answer": "Most transformations are completed in 10-15 seconds. Processing time may vary slightly depending on image size and complexity, but you'll always get fast, professional results.",
         "value": "item-3"
       },
       {
-        "question": "Excepteur sint occaecat cupidata non proident sunt?",
-        "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        "question": "Can I cancel my subscription anytime?",
+        "answer": "Yes, you can cancel your subscription at any time. There are no long-term commitments or cancellation fees. Your plan remains active until the end of your current billing period.",
         "value": "item-4"
       },
       {
-        "question": "Enim ad minim veniam, quis nostrud exercitation ullamco laboris?",
-        "answer": "consectetur adipisicing elit. Sint labore.",
+        "question": "Is there a free trial available?",
+        "answer": "Yes! We offer a free trial with our Starter plan so you can experience FluxTools before committing. No credit card required to start your trial.",
         "value": "item-5"
       }
     ]
@@ -262,7 +262,7 @@
   "footer": {
     "show": true,
     "brand": {
-      "description": "A modern SaaS project template to quickly launch your startup project with rich components and features."
+      "description": "Transform your photos into stunning artwork with AI-powered style transfer. Experience the future of creative photo editing."
     },
     "sections": [
       {

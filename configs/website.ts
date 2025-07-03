@@ -1,8 +1,8 @@
 export const website: WebsiteConfigTypes = {
-  brandName: 'ShadcnLanding',
+  brandName: 'FluxTools',
   logo: {
     show: true,
-    name: 'Shadcn',
+    name: 'FluxTools',
   },
   themeSwitcher: {
     open: true,
