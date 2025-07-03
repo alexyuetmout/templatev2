@@ -262,8 +262,7 @@
   "footer": {
     "show": true,
     "brand": {
-      "name": "Shadcn",
-      "href": "#"
+      "description": "A modern SaaS project template to quickly launch your startup project with rich components and features."
     },
     "sections": [
       {

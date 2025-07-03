@@ -9,9 +9,10 @@ import LinkedInIcon from "@/components/icons/linkedin-icon";
 import XIcon from "@/components/icons/x-icon";
 import EmailIcon from "@/components/icons/email-icon";
 import { useLangProviderContext } from "@/context/useLangProvider";
+import { website } from "@/configs/website";
 
 export const FooterSection = () => {
-  const { $t } = useLangProviderContext();
+  const { $t, i18nLink } = useLangProviderContext();
 
   // 安全检查，防止配置未加载时报错
   if (!$t?.home?.footer?.show) {
@@ -26,23 +27,22 @@ export const FooterSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
           <div className="col-span-full xl:col-span-2">
             <Link
-              href={footer.brand.href}
+              href={i18nLink('/')}
               className="flex font-bold items-center mb-3"
             >
               <ChevronsDownIcon className="w-9 h-9 mr-2 bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg border border-secondary" />
-              <h3 className="text-2xl">{footer.brand.name}</h3>
+              <h3 className="text-2xl">{website.logo.name}</h3>
             </Link>
 
             {/* 品牌描述 */}
             <p className="text-muted-foreground text-sm leading-relaxed mb-4 max-w-xs">
-              一个现代化的 SaaS
-              项目模板，通过丰富的组件和功能快速启动您的创业项目。
+              {footer.brand.description}
             </p>
 
             {/* 社交媒体图标 */}
             <div className="flex items-center gap-3">
               <Link
-                href="https://twitter.com"
+                href={website.socialMedia.twitter}
                 target="_blank"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
@@ -50,7 +50,7 @@ export const FooterSection = () => {
               </Link>
 
               <Link
-                href="https://github.com"
+                href={website.socialMedia.github}
                 target="_blank"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
@@ -58,7 +58,7 @@ export const FooterSection = () => {
               </Link>
 
               <Link
-                href="https://discord.com"
+                href={website.socialMedia.discord}
                 target="_blank"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
@@ -66,7 +66,7 @@ export const FooterSection = () => {
               </Link>
 
               <Link
-                href="mailto:hello@example.com"
+                href={`mailto:${website.socialMedia.email}`}
                 target="_blank"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >

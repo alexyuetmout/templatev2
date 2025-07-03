@@ -39,6 +39,12 @@ declare global {
         name: string
       }>
     }
+    socialMedia: {
+      twitter: string
+      github: string
+      discord: string
+      email: string
+    }
   }
 }
 

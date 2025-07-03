@@ -261,8 +261,7 @@
   "footer": {
     "show": true,
     "brand": {
-      "name": "Shadcn",
-      "href": "#"
+      "description": "一個現代化的 SaaS 專案模板，通過豐富的組件和功能快速啟動您的創業專案。"
     },
     "sections": [
       {

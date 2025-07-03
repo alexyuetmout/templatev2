@@ -50,4 +50,10 @@ export const website: WebsiteConfigTypes = {
       },
     ],
   },
+  socialMedia: {
+    twitter: "https://twitter.com",
+    github: "https://github.com",
+    discord: "https://discord.com",
+    email: "hello@example.com",
+  },
 } 

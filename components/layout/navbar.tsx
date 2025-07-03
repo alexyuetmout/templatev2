@@ -28,7 +28,7 @@ import { website } from "@/configs/website";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-  const { locale, $t } = useLangProviderContext();
+  const { locale, $t, i18nLink } = useLangProviderContext();
 
   // 安全检查，防止数据未加载时报错
   if (!$t?.common?.header?.navigation) {
@@ -42,7 +42,7 @@ export const Navbar = () => {
   return (
     <header className="backdrop-blur-sm bg-background/80 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl mx-auto sticky top-0 z-40 flex justify-between items-center px-4 py-3 transition-all duration-300">
       {website.logo.show && (
-        <Link href="/" className="font-bold text-lg flex items-center">
+        <Link href={i18nLink('/')} className="font-bold text-lg flex items-center">
           <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
           {website.logo.name}
         </Link>
@@ -66,7 +66,7 @@ export const Navbar = () => {
               <SheetHeader className="mb-4 ml-4">
                 <SheetTitle className="flex items-center">
                   {website.logo.show && (
-                    <Link href="/" className="flex items-center">
+                    <Link href={i18nLink('/')} className="flex items-center">
                       <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
                       {website.logo.name}
                     </Link>
@@ -181,7 +181,7 @@ export const Navbar = () => {
         <Button asChild size="sm" variant="ghost" aria-label="View on GitHub">
           <Link
             aria-label="View on GitHub"
-            href="https://github.com/nobruf/shadcn-landing-page.git"
+            href={website.socialMedia.github}
             target="_blank"
           >
             <Github className="size-5" />
