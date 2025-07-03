@@ -27,7 +27,7 @@ export const FooterSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
           <div className="col-span-full xl:col-span-2">
             <Link
-              href={i18nLink('/')}
+              href={i18nLink("/")}
               className="flex font-bold items-center mb-3"
             >
               <ChevronsDownIcon className="w-9 h-9 mr-2 bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg border border-secondary" />
@@ -96,13 +96,6 @@ export const FooterSection = () => {
         <section className="">
           <h3 className="">
             <span dangerouslySetInnerHTML={{ __html: footer.copyright.text }} />
-            <Link
-              target="_blank"
-              href={footer.copyright.author.href}
-              className="text-primary transition-all border-primary hover:border-b-2 ml-1"
-            >
-              {footer.copyright.author.name}
-            </Link>
           </h3>
         </section>
       </div>

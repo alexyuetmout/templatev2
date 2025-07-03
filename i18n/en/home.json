@@ -23,6 +23,22 @@
       "lightSrc": "/hero-image-light.jpeg",
       "darkSrc": "/hero-image-dark.jpeg",
       "alt": "dashboard"
+    },
+    "discount": {
+      "show": true,
+      "text": "🚀 Limited Time: 50% off all plans"
+    },
+    "socialProof": {
+      "show": true,
+      "avatars": [
+        "https://github.com/shadcn.png",
+        "https://github.com/shadcn.png", 
+        "https://github.com/shadcn.png",
+        "https://github.com/shadcn.png",
+        "https://github.com/shadcn.png"
+      ],
+      "rating": "⭐⭐⭐⭐⭐",
+      "text": "from 500+ happy creators"
     }
   },
   "sponsors": {
@@ -266,80 +282,56 @@
     },
     "sections": [
       {
-        "title": "Contact",
+        "title": "Resources",
         "links": [
           {
-            "label": "Github",
+            "label": "FAQ",
+            "href": "#faq"
+          },
+          {
+            "label": "Pricing",
+            "href": "#pricing"
+          }
+        ]
+      },
+      {
+        "title": "Legal",
+        "links": [
+          {
+            "label": "Privacy Policy",
             "href": "#"
           },
           {
-            "label": "Twitter",
-            "href": "#"
-          },
-          {
-            "label": "Instagram",
+            "label": "Terms of Service",
             "href": "#"
           }
         ]
       },
       {
-        "title": "Platforms",
-        "links": [
-          {
-            "label": "iOS",
-            "href": "#"
-          },
-          {
-            "label": "Android",
-            "href": "#"
-          },
-          {
-            "label": "Web",
-            "href": "#"
-          }
-        ]
-      },
-      {
-        "title": "Help",
+        "title": "Support",
         "links": [
           {
             "label": "Contact Us",
-            "href": "#"
-          },
-          {
-            "label": "FAQ",
-            "href": "#"
+            "href": "mailto:hello@example.com"
           },
           {
             "label": "Feedback",
-            "href": "#"
+            "href": "mailto:feedback@example.com"
           }
         ]
       },
       {
-        "title": "Socials",
+        "title": "Company",
         "links": [
           {
-            "label": "Twitch",
-            "href": "#"
-          },
-          {
-            "label": "Discord",
-            "href": "#"
-          },
-          {
-            "label": "Dribbble",
+            "label": "About",
             "href": "#"
           }
         ]
       }
     ],
     "copyright": {
-      "text": "&copy; 2024 Designed and developed by",
-      "author": {
-        "name": "Leo Miranda",
-        "href": "https://github.com/leoMirandaa"
-      }
+      "text": "Copyright ©2024 fluxtools.ai. All rights reserved."
     }
   }
 }

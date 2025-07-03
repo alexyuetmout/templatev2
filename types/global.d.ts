@@ -44,6 +44,7 @@ declare global {
       github: string
       discord: string
       email: string
+      feedback: string
     }
   }
 }

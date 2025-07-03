@@ -55,5 +55,6 @@ export const website: WebsiteConfigTypes = {
     github: "https://github.com",
     discord: "https://discord.com",
     email: "hello@example.com",
+    feedback: "feedback@example.com",
   },
 } 
