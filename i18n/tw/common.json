@@ -4,6 +4,10 @@
     "description": "來自Shadcn的登陸頁模板"
   },
   "header": {
+    "auth": {
+      "signIn": "登入",
+      "getStarted": "開始使用"
+    },
     "navigation": {
       "routes": [
         {

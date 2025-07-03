@@ -32,23 +32,21 @@ export default async function LocaleLayout({
   const dictionary = await getDictionary(params.locale);
 
   return (
-    <html lang={languageConvert(params.locale)} suppressHydrationWarning>
-      <body className={cn("min-h-screen bg-background", inter.className)}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme={website.themeSwitcher.defaultTheme}
-          enableSystem
-          disableTransitionOnChange
+    <div className="min-h-screen bg-background">
+      <ThemeProvider
+        attribute="class"
+        defaultTheme={website.themeSwitcher.defaultTheme}
+        enableSystem
+        disableTransitionOnChange
+      >
+        <LangProvider
+          initialLocale={params.locale}
+          initialDictionary={dictionary}
         >
-          <LangProvider
-            initialLocale={params.locale}
-            initialDictionary={dictionary}
-          >
-            <Navbar />
-            {children}
-          </LangProvider>
-        </ThemeProvider>
-      </body>
-    </html>
+          <Navbar />
+          {children}
+        </LangProvider>
+      </ThemeProvider>
+    </div>
   );
 }

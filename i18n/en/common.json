@@ -4,6 +4,10 @@
     "description": "Landing template from Shadcn"
   },
   "header": {
+    "auth": {
+      "signIn": "Sign In",
+      "getStarted": "Get Started"
+    },
     "navigation": {
       "routes": [
         {

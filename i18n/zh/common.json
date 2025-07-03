@@ -4,6 +4,10 @@
     "description": "来自Shadcn的落地页模板"
   },
   "header": {
+    "auth": {
+      "signIn": "登录",
+      "getStarted": "开始使用"
+    },
     "navigation": {
       "routes": [
         {

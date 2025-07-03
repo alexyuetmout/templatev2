@@ -9,5 +9,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return children;
+  return (
+    <html suppressHydrationWarning>
+      <body className={inter.className}>{children}</body>
+    </html>
+  );
 }

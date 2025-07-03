@@ -1,5 +1,5 @@
 "use client";
-import { ChevronsDown, Github, Menu } from "lucide-react";
+import { ChevronsDown, Menu } from "lucide-react";
 import React from "react";
 import {
   Sheet,
@@ -36,6 +36,7 @@ export const Navbar = () => {
   }
 
   const navigation = $t.common.header.navigation;
+  const auth = $t.common.header.auth;
   const routeList = navigation.routes;
   const featuresConfig = navigation.features;
 
@@ -102,6 +103,21 @@ export const Navbar = () => {
 
             <SheetFooter className="flex-col sm:flex-col justify-start items-start">
               <Separator className="mb-2" />
+              
+              {/* Mobile Auth Buttons */}
+              <div className="flex flex-col gap-2 w-full mb-4">
+                <Button asChild size="sm" variant="ghost" className="justify-start">
+                  <Link href={i18nLink('/signin')}>
+                    {auth.signIn}
+                  </Link>
+                </Button>
+                <Button asChild size="sm" variant="default" className="justify-start">
+                  <Link href={i18nLink('/signup')}>
+                    {auth.getStarted}
+                  </Link>
+                </Button>
+              </div>
+              
               {website.themeSwitcher.open && <ToggleTheme />}
               <LanguageSwitcher locale={locale} />
             </SheetFooter>
@@ -178,15 +194,19 @@ export const Navbar = () => {
         <LanguageSwitcher locale={locale} />
         {website.themeSwitcher.open && <ToggleTheme />}
 
-        <Button asChild size="sm" variant="ghost" aria-label="View on GitHub">
-          <Link
-            aria-label="View on GitHub"
-            href={website.socialMedia.github}
-            target="_blank"
-          >
-            <Github className="size-5" />
+        {/* Auth Buttons */}
+        <Button asChild size="sm" variant="ghost">
+          <Link href={i18nLink('/signin')}>
+            {auth.signIn}
           </Link>
         </Button>
+
+        <Button asChild size="sm" variant="default">
+          <Link href={i18nLink('/signup')}>
+            {auth.getStarted}
+          </Link>
+        </Button>
+
       </div>
     </header>
   );
