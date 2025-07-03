@@ -11,14 +11,14 @@
     "navigation": {
       "routes": [
         {
+          "key": "pricing",
+          "label": "Pricing",
+          "href": "/pricing"
+        },
+        {
           "key": "testimonials",
           "label": "Testimonials",
           "href": "#testimonials"
-        },
-        {
-          "key": "team",
-          "label": "Team",
-          "href": "#team"
         },
         {
           "key": "contact",

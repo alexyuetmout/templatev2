@@ -95,7 +95,7 @@ export const Navbar = () => {
                     variant="ghost"
                     className="justify-start text-base"
                   >
-                    <Link href={href}>{label}</Link>
+                    <Link href={href.startsWith('#') ? href : i18nLink(href)}>{label}</Link>
                   </Button>
                 ))}
               </div>
@@ -179,7 +179,7 @@ export const Navbar = () => {
             {routeList.map(({ href, label }) => (
               <NavigationMenuLink key={href} asChild>
                 <Link
-                  href={href}
+                  href={href.startsWith('#') ? href : i18nLink(href)}
                   className="text-base px-4 py-2 rounded-md hover:bg-muted/20 transition-colors"
                 >
                   {label}

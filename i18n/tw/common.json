@@ -11,14 +11,14 @@
     "navigation": {
       "routes": [
         {
+          "key": "pricing",
+          "label": "價格",
+          "href": "/pricing"
+        },
+        {
           "key": "testimonials",
           "label": "客戶評價",
           "href": "#testimonials"
-        },
-        {
-          "key": "team",
-          "label": "團隊介紹",
-          "href": "#team"
         },
         {
           "key": "contact",

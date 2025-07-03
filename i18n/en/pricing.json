@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "title": "Pricing - FluxTools",
+    "description": "Choose the perfect plan for your AI image style transfer needs. Flexible monthly subscriptions with no long-term commitments."
+  },
+  "hero": {
+    "subtitle": "Simple, Transparent",
+    "title": "Pricing",
+    "description": "Choose the perfect plan for your creative needs. All plans include our full suite of AI art styles with no hidden fees.",
+    "features": [
+      "Cancel anytime",
+      "14-day free trial", 
+      "No setup fees"
+    ]
+  },
+  "pricing": {
+    "subtitle": "Simple Pricing",
+    "title": "Choose Your Plan",
+    "description": "Flexible monthly subscriptions to fit your creative needs. Cancel anytime, no long-term commitments.",
+    "currency": {
+      "symbol": "$",
+      "period": "/month"
+    },
+    "plans": [
+      {
+        "title": "Starter",
+        "popular": false,
+        "price": 9,
+        "description": "Perfect for individuals and hobbyists who want to explore AI art.",
+        "buttonText": "Start Free Trial",
+        "benefitList": [
+          "50 transformations/month",
+          "All art styles included", 
+          "High resolution output",
+          "Standard processing speed",
+          "Email support"
+        ]
+      },
+      {
+        "title": "Creator",
+        "popular": true,
+        "price": 29,
+        "description": "Best for content creators, marketers, and small businesses.",
+        "buttonText": "Get Started",
+        "benefitList": [
+          "500 transformations/month",
+          "All art styles included",
+          "Ultra-high resolution", 
+          "Fast processing",
+          "Priority support"
+        ]
+      },
+      {
+        "title": "Professional",
+        "popular": false,
+        "price": 99,
+        "description": "For agencies and professionals who need unlimited creative power.",
+        "buttonText": "Contact Us",
+        "benefitList": [
+          "Unlimited transformations",
+          "All art styles + exclusive styles",
+          "Ultra-high resolution",
+          "Fastest processing",
+          "Dedicated account manager",
+          "Custom integrations",
+          "White-label options"
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "subtitle": "Pricing FAQ",
+    "title": "Frequently Asked Questions",
+    "description": "Everything you need to know about our pricing and plans.",
+    "items": [
+      {
+        "question": "Can I change my plan anytime?",
+        "answer": "Yes! You can upgrade or downgrade your plan at any time. Changes take effect immediately, and we'll prorate any billing differences."
+      },
+      {
+        "question": "What happens if I exceed my monthly transformation limit?",
+        "answer": "Don't worry! We'll notify you when you're approaching your limit. You can either upgrade your plan or purchase additional transformations at $0.50 each."
+      },
+      {
+        "question": "Do you offer refunds?",
+        "answer": "We offer a 14-day money-back guarantee for all plans. If you're not satisfied, contact us within 14 days for a full refund."
+      },
+      {
+        "question": "Are there any hidden fees or setup costs?",
+        "answer": "No hidden fees! The price you see is what you pay. No setup costs, no cancellation fees, no surprises."
+      },
+      {
+        "question": "Can I cancel my subscription anytime?",
+        "answer": "Absolutely! You can cancel your subscription anytime from your account settings. Your plan remains active until the end of your billing period."
+      },
+      {
+        "question": "Do you offer annual plans or discounts?",
+        "answer": "Yes! Annual plans save you 20%. We also offer special discounts for students, non-profits, and volume customers. Contact us for details."
+      }
+    ]
+  }
+}
