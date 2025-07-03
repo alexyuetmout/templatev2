@@ -171,19 +171,7 @@
         "rating": 4.9
       }
     ]
-  },
-  "community": {
-    "show": true,
-    "title": {
-      "prefix": "準備好加入這個",
-      "highlight": "社群了嗎？"
-    },
-    "description": "加入我們充滿活力的Discord社群！與志同道合的夥伴交流、分享和成長。點擊立即加入！🚀",
-    "button": {
-      "text": "加入Discord",
-      "href": "https://discord.com/"
-    }
-  },
+  }, 
   "pricing": {
     "show": true,
     "subtitle": "價格方案",
@@ -237,77 +225,7 @@
         ]
       }
     ]
-  },
-  "contact": {
-    "show": true,
-    "subtitle": "聯絡我們",
-    "title": "與我們取得聯繫",
-    "description": "我們期待與您的合作，無論是專案諮詢還是技術支援，請隨時與我們聯繫。",
-    "contactInfo": {
-      "address": {
-        "title": "找到我們",
-        "value": "台灣台北市信義區信義路五段7號"
-      },
-      "phone": {
-        "title": "致電我們",
-        "value": "+886 2 2345 6789"
-      },
-      "email": {
-        "title": "電子郵件",
-        "value": "contact@company.com"
-      },
-      "hours": {
-        "title": "營業時間",
-        "schedule": "週一至週五",
-        "time": "上午9點 - 下午6點"
-      }
-    },
-    "form": {
-      "firstName": {
-        "label": "名字",
-        "placeholder": "請輸入您的名字"
-      },
-      "lastName": {
-        "label": "姓氏",
-        "placeholder": "請輸入您的姓氏"
-      },
-      "email": {
-        "label": "電子郵箱",
-        "placeholder": "請輸入您的電子郵箱地址"
-      },
-      "subject": {
-        "label": "主題",
-        "placeholder": "請選擇諮詢主題",
-        "options": [
-          {
-            "value": "Web Development",
-            "label": "網站開發"
-          },
-          {
-            "value": "Mobile Development",
-            "label": "行動應用開發"
-          },
-          {
-            "value": "Figma Design",
-            "label": "UI/UX設計"
-          },
-          {
-            "value": "REST API",
-            "label": "API介面開發"
-          },
-          {
-            "value": "FullStack Project",
-            "label": "全端專案開發"
-          }
-        ]
-      },
-      "message": {
-        "label": "留言",
-        "placeholder": "請詳細描述您的需求..."
-      },
-      "button": "發送訊息"
-    }
-  },
+  }, 
   "faq": {
     "show": true,
     "subtitle": "常見問題",

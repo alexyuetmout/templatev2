@@ -171,19 +171,7 @@
         "rating": 4.9
       }
     ]
-  },
-  "community": {
-    "show": true,
-    "title": {
-      "prefix": "准备好加入这个",
-      "highlight": "社区了吗？"
-    },
-    "description": "加入我们充满活力的Discord社区！与志同道合的伙伴交流、分享和成长。点击立即加入！🚀",
-    "button": {
-      "text": "加入Discord",
-      "href": "https://discord.com/"
-    }
-  },
+  }, 
   "pricing": {
     "show": true,
     "subtitle": "价格方案",
@@ -237,76 +225,6 @@
         ]
       }
     ]
-  },
-  "contact": {
-    "show": true,
-    "subtitle": "联系我们",
-    "title": "与我们取得联系",
-    "description": "我们期待与您的合作，无论是项目咨询还是技术支持，请随时与我们联系。",
-    "contactInfo": {
-      "address": {
-        "title": "找到我们",
-        "value": "中国上海市浦东新区陆家嘴环路1000号"
-      },
-      "phone": {
-        "title": "致电我们",
-        "value": "+86 138 0013 8000"
-      },
-      "email": {
-        "title": "邮件联系",
-        "value": "contact@company.com"
-      },
-      "hours": {
-        "title": "营业时间",
-        "schedule": "周一至周五",
-        "time": "上午9点 - 下午6点"
-      }
-    },
-    "form": {
-      "firstName": {
-        "label": "名",
-        "placeholder": "请输入您的名字"
-      },
-      "lastName": {
-        "label": "姓",
-        "placeholder": "请输入您的姓氏"
-      },
-      "email": {
-        "label": "邮箱",
-        "placeholder": "请输入您的邮箱地址"
-      },
-      "subject": {
-        "label": "主题",
-        "placeholder": "请选择咨询主题",
-        "options": [
-          {
-            "value": "Web Development",
-            "label": "网站开发"
-          },
-          {
-            "value": "Mobile Development",
-            "label": "移动应用开发"
-          },
-          {
-            "value": "Figma Design",
-            "label": "UI/UX设计"
-          },
-          {
-            "value": "REST API",
-            "label": "API接口开发"
-          },
-          {
-            "value": "FullStack Project",
-            "label": "全栈项目开发"
-          }
-        ]
-      },
-      "message": {
-        "label": "留言",
-        "placeholder": "请详细描述您的需求..."
-      },
-      "button": "发送消息"
-    }
   },
   "faq": {
     "show": true,

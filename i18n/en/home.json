@@ -172,18 +172,7 @@
       }
     ]
   },
-  "community": {
-    "show": true,
-    "title": {
-      "prefix": "Ready to join this",
-      "highlight": "Community?"
-    },
-    "description": "Join our vibrant Discord community! Connect, share, and grow with like-minded enthusiasts. Click to dive in! 🚀",
-    "button": {
-      "text": "Join Discord",
-      "href": "https://discord.com/"
-    }
-  },
+
   "pricing": {
     "show": true,
     "subtitle": "Pricing",
@@ -237,76 +226,6 @@
         ]
       }
     ]
-  },
-  "contact": {
-    "show": true,
-    "subtitle": "Contact",
-    "title": "Connect With Us",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ipsam sint enim exercitationem ex autem corrupti quas tenetur",
-    "contactInfo": {
-      "address": {
-        "title": "Find us",
-        "value": "742 Evergreen Terrace, Springfield, IL 62704"
-      },
-      "phone": {
-        "title": "Call us",
-        "value": "+1 (619) 123-4567"
-      },
-      "email": {
-        "title": "Mail US",
-        "value": "leomirandadev@gmail.com"
-      },
-      "hours": {
-        "title": "Visit us",
-        "schedule": "Monday - Friday",
-        "time": "8AM - 4PM"
-      }
-    },
-    "form": {
-      "firstName": {
-        "label": "First Name",
-        "placeholder": "Leopoldo"
-      },
-      "lastName": {
-        "label": "Last Name",
-        "placeholder": "Miranda"
-      },
-      "email": {
-        "label": "Email",
-        "placeholder": "leomirandadev@gmail.com"
-      },
-      "subject": {
-        "label": "Subject",
-        "placeholder": "Select a subject",
-        "options": [
-          {
-            "value": "Web Development",
-            "label": "Web Development"
-          },
-          {
-            "value": "Mobile Development",
-            "label": "Mobile Development"
-          },
-          {
-            "value": "Figma Design",
-            "label": "Figma Design"
-          },
-          {
-            "value": "REST API",
-            "label": "REST API"
-          },
-          {
-            "value": "FullStack Project",
-            "label": "FullStack Project"
-          }
-        ]
-      },
-      "message": {
-        "label": "Message",
-        "placeholder": "Your message..."
-      },
-      "button": "Send message"
-    }
   },
   "faq": {
     "show": true,
