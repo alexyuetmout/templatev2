@@ -56,5 +56,372 @@
         "description": "提供A/B测试和数据分析工具，帮助您验证和优化各种营销创意和策略。"
       }
     ]
+  },
+  "features": {
+    "show": true,
+    "subtitle": "产品特色",
+    "title": "我们的独特优势",
+    "description": "凭借先进的技术和专业的团队，我们为您提供卓越的产品体验和全方位的解决方案，让您在竞争中脱颖而出。",
+    "items": [
+      {
+        "icon": "TabletSmartphone",
+        "title": "移动端友好",
+        "description": "完美适配各种移动设备，确保用户在任何屏幕尺寸下都能获得优质的浏览体验。"
+      },
+      {
+        "icon": "BadgeCheck",
+        "title": "社会认证",
+        "description": "通过真实的用户评价和权威认证，建立强有力的社会信任和品牌可信度。"
+      },
+      {
+        "icon": "Goal",
+        "title": "精准内容",
+        "description": "基于用户需求和行为分析，提供个性化的内容推荐和精准的信息传达。"
+      },
+      {
+        "icon": "PictureInPicture",
+        "title": "强大视觉",
+        "description": "采用专业的视觉设计和丰富的多媒体元素，打造震撼的视觉冲击力和用户体验。"
+      },
+      {
+        "icon": "MousePointerClick",
+        "title": "清晰引导",
+        "description": "简洁明了的操作引导和行动号召，帮助用户快速完成目标转化。"
+      },
+      {
+        "icon": "Newspaper",
+        "title": "清晰标题",
+        "description": "简洁有力的标题和信息架构，让用户一目了然地理解产品价值和核心信息。"
+      }
+    ]
+  },
+  "services": {
+    "show": true,
+    "subtitle": "服务项目",
+    "title": "助力业务增长",
+    "description": "从市场营销到运营策略，从销售管理到战略规划，我们拥有专业的团队和丰富的经验，助您实现业务目标。",
+    "items": [
+      {
+        "title": "自定义域名集成",
+        "description": "支持自定义域名绑定，打造专属品牌形象，提升企业信誉度。",
+        "pro": false
+      },
+      {
+        "title": "社交媒体整合",
+        "description": "无缝对接主流社交平台，实现多渠道营销推广，扩大品牌影响力。",
+        "pro": false
+      },
+      {
+        "title": "邮件营销集成",
+        "description": "强大的邮件营销自动化功能，精准触达目标客户。",
+        "pro": false
+      },
+      {
+        "title": "SEO优化服务",
+        "description": "专业的搜索引擎优化服务，提升网站排名和流量。",
+        "pro": true
+      }
+    ]
+  },
+  "testimonials": {
+    "show": true,
+    "subtitle": "客户评价",
+    "title": "听听我们1000+客户的声音",
+    "items": [
+      {
+        "image": "https://github.com/shadcn.png",
+        "name": "李明",
+        "userName": "产品经理",
+        "comment": "太棒了！NextJs + Shadcn 非常棒！这个模板让我可以轻松更改颜色、字体和图片来匹配我的品牌形象。",
+        "rating": 5.0
+      },
+      {
+        "image": "https://github.com/shadcn.png",
+        "name": "王丽华",
+        "userName": "网络安全分析师",
+        "comment": "界面设计简洁优雅，功能强大实用。团队协作效率提升了很多，强烈推荐给同行使用。",
+        "rating": 4.8
+      },
+      {
+        "image": "https://github.com/shadcn.png",
+        "name": "张伟强",
+        "userName": "技术总监",
+        "comment": "系统稳定性很好，响应速度快。技术架构设计合理，为我们的业务发展提供了强有力的支撑。",
+        "rating": 4.9
+      },
+      {
+        "image": "https://github.com/shadcn.png",
+        "name": "陈思雨",
+        "userName": "数据科学家",
+        "comment": "数据分析功能很全面，可视化效果出色。帮助我们更好地理解用户行为，优化产品策略。",
+        "rating": 5.0
+      },
+      {
+        "image": "https://github.com/shadcn.png",
+        "name": "刘建国",
+        "userName": "项目经理",
+        "comment": "项目管理功能完善，团队配合更加顺畅。进度跟踪清晰，大大提高了工作效率。",
+        "rating": 5.0
+      },
+      {
+        "image": "https://github.com/shadcn.png",
+        "name": "杨晓燕",
+        "userName": "运维工程师",
+        "comment": "部署简单，运维便捷。监控功能齐全，让我们能够及时发现和解决问题，保障系统稳定运行。",
+        "rating": 4.9
+      }
+    ]
+  },
+  "community": {
+    "show": true,
+    "title": {
+      "prefix": "准备好加入这个",
+      "highlight": "社区了吗？"
+    },
+    "description": "加入我们充满活力的Discord社区！与志同道合的伙伴交流、分享和成长。点击立即加入！🚀",
+    "button": {
+      "text": "加入Discord",
+      "href": "https://discord.com/"
+    }
+  },
+  "pricing": {
+    "show": true,
+    "subtitle": "价格方案",
+    "title": "获得无限制访问权限",
+    "description": "选择最适合您需求的价格方案，享受我们的优质服务。",
+    "currency": {
+      "symbol": "$",
+      "period": "/月"
+    },
+    "plans": [
+      {
+        "title": "免费版",
+        "popular": false,
+        "price": 0,
+        "description": "适合个人用户和小型项目，提供基础功能体验。",
+        "buttonText": "开始免费试用",
+        "benefitList": [
+          "1 名团队成员",
+          "1 GB 存储空间", 
+          "最多 2 个页面",
+          "社区支持",
+          "AI 智能助手"
+        ]
+      },
+      {
+        "title": "高级版",
+        "popular": true,
+        "price": 45,
+        "description": "适合小型团队和成长中的企业，功能更加完善。",
+        "buttonText": "立即开始",
+        "benefitList": [
+          "4 名团队成员",
+          "8 GB 存储空间",
+          "最多 6 个页面", 
+          "优先技术支持",
+          "AI 智能助手"
+        ]
+      },
+      {
+        "title": "企业版",
+        "popular": false,
+        "price": 120,
+        "description": "适合大型企业，提供全面的功能和专业服务。",
+        "buttonText": "联系我们",
+        "benefitList": [
+          "10 名团队成员",
+          "20 GB 存储空间",
+          "最多 10 个页面",
+          "电话和邮件支持",
+          "AI 智能助手"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "show": true,
+    "subtitle": "联系我们",
+    "title": "与我们取得联系",
+    "description": "我们期待与您的合作，无论是项目咨询还是技术支持，请随时与我们联系。",
+    "contactInfo": {
+      "address": {
+        "title": "找到我们",
+        "value": "中国上海市浦东新区陆家嘴环路1000号"
+      },
+      "phone": {
+        "title": "致电我们",
+        "value": "+86 138 0013 8000"
+      },
+      "email": {
+        "title": "邮件联系",
+        "value": "contact@company.com"
+      },
+      "hours": {
+        "title": "营业时间",
+        "schedule": "周一至周五",
+        "time": "上午9点 - 下午6点"
+      }
+    },
+    "form": {
+      "firstName": {
+        "label": "名",
+        "placeholder": "请输入您的名字"
+      },
+      "lastName": {
+        "label": "姓",
+        "placeholder": "请输入您的姓氏"
+      },
+      "email": {
+        "label": "邮箱",
+        "placeholder": "请输入您的邮箱地址"
+      },
+      "subject": {
+        "label": "主题",
+        "placeholder": "请选择咨询主题",
+        "options": [
+          {
+            "value": "Web Development",
+            "label": "网站开发"
+          },
+          {
+            "value": "Mobile Development",
+            "label": "移动应用开发"
+          },
+          {
+            "value": "Figma Design",
+            "label": "UI/UX设计"
+          },
+          {
+            "value": "REST API",
+            "label": "API接口开发"
+          },
+          {
+            "value": "FullStack Project",
+            "label": "全栈项目开发"
+          }
+        ]
+      },
+      "message": {
+        "label": "留言",
+        "placeholder": "请详细描述您的需求..."
+      },
+      "button": "发送消息"
+    }
+  },
+  "faq": {
+    "show": true,
+    "subtitle": "常见问题",
+    "title": "常见问题解答",
+    "items": [
+      {
+        "question": "这个模板是免费的吗？",
+        "answer": "是的，这是一个免费的 NextJS Shadcn 模板。",
+        "value": "item-1"
+      },
+      {
+        "question": "如何自定义主题颜色和样式？",
+        "answer": "您可以通过修改 globals.css 中的 CSS 变量来自定义主题颜色。我们使用了严格的 CSS 变量设计系统，支持亮色和暗色主题切换。",
+        "value": "item-2"
+      },
+      {
+        "question": "支持哪些语言和国际化功能？",
+        "answer": "目前支持英语、简体中文和繁体中文。使用 next-i18n-router 实现多语言路由，支持动态语言切换和本地化内容管理。",
+        "value": "item-3"
+      },
+      {
+        "question": "如何部署这个项目到生产环境？",
+        "answer": "支持部署到 Vercel、Netlify 等平台。运行 pnpm build 构建生产版本，然后按照平台文档进行部署。",
+        "value": "item-4"
+      },
+      {
+        "question": "技术支持和文档在哪里？",
+        "answer": "完整的文档包含在 CLAUDE.md 文件中，包括开发指南、架构说明和最佳实践。如需技术支持请通过联系表单联系我们。",
+        "value": "item-5"
+      }
+    ]
+  },
+  "footer": {
+    "show": true,
+    "brand": {
+      "name": "Shadcn",
+      "href": "#"
+    },
+    "sections": [
+      {
+        "title": "联系方式",
+        "links": [
+          {
+            "label": "Github",
+            "href": "#"
+          },
+          {
+            "label": "Twitter",
+            "href": "#"
+          },
+          {
+            "label": "Instagram",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "title": "平台支持",
+        "links": [
+          {
+            "label": "iOS",
+            "href": "#"
+          },
+          {
+            "label": "Android",
+            "href": "#"
+          },
+          {
+            "label": "Web",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "title": "帮助中心",
+        "links": [
+          {
+            "label": "联系我们",
+            "href": "#"
+          },
+          {
+            "label": "常见问题",
+            "href": "#"
+          },
+          {
+            "label": "意见反馈",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "title": "社交媒体",
+        "links": [
+          {
+            "label": "Twitch",
+            "href": "#"
+          },
+          {
+            "label": "Discord",
+            "href": "#"
+          },
+          {
+            "label": "Dribbble",
+            "href": "#"
+          }
+        ]
+      }
+    ],
+    "copyright": {
+      "text": "&copy; 2024 设计和开发者",
+      "author": {
+        "name": "Leo Miranda",
+        "href": "https://github.com/leoMirandaa"
+      }
+    }
   }
 }

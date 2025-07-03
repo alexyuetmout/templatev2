@@ -1,3 +1,5 @@
+"use client";
+
 import DiscordIcon from "@/components/icons/discord-icon";
 import { Button } from "@/components/ui/button";
 import {
@@ -7,8 +9,18 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { useLangProviderContext } from "@/context/useLangProvider";
 
 export const CommunitySection = () => {
+  const { $t } = useLangProviderContext();
+  
+  // 安全检查，防止配置未加载时报错
+  if (!$t?.home?.community?.show) {
+    return null;
+  }
+  
+  const community = $t.home.community;
+  
   return (
     <section id="community" className="py-12 ">
       <hr className="border-secondary" />
@@ -19,22 +31,21 @@ export const CommunitySection = () => {
               <CardTitle className="text-4xl md:text-5xl font-bold flex flex-col items-center">
                 <DiscordIcon />
                 <div>
-                  Ready to join this
+                  {community.title.prefix}
                   <span className="text-transparent pl-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
-                    Community?
+                    {community.title.highlight}
                   </span>
                 </div>
               </CardTitle>
             </CardHeader>
             <CardContent className="lg:w-[80%] text-xl text-muted-foreground">
-              Join our vibrant Discord community! Connect, share, and grow with
-              like-minded enthusiasts. Click to dive in! 🚀
+              {community.description}
             </CardContent>
 
             <CardFooter>
               <Button asChild>
-                <a href="https://discord.com/" target="_blank">
-                  Join Discord
+                <a href={community.button.href} target="_blank">
+                  {community.button.text}
                 </a>
               </Button>
             </CardFooter>

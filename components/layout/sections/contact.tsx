@@ -27,6 +27,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
+import { useLangProviderContext } from "@/context/useLangProvider";
 
 const formSchema = z.object({
   firstName: z.string().min(2).max(255),
@@ -37,22 +38,31 @@ const formSchema = z.object({
 });
 
 export const ContactSection = () => {
+  const { $t } = useLangProviderContext();
+  
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       firstName: "",
       lastName: "",
       email: "",
-      subject: "Web Development",
+      subject: $t?.home?.contact?.form?.subject?.options?.[0]?.value || "Web Development",
       message: "",
     },
   });
+  
+  // 安全检查，防止配置未加载时报错
+  if (!$t?.home?.contact?.show) {
+    return null;
+  }
+  
+  const contact = $t.home.contact;
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     const { firstName, lastName, email, subject, message } = values;
     console.log(values);
 
-    const mailToLink = `mailto:leomirandadev@gmail.com?subject=${subject}&body=Hello I am ${firstName} ${lastName}, my Email is ${email}. %0D%0A${message}`;
+    const mailToLink = `mailto:${contact.contactInfo.email.value}?subject=${subject}&body=Hello I am ${firstName} ${lastName}, my Email is ${email}. %0D%0A${message}`;
 
     window.location.href = mailToLink;
   }
@@ -63,53 +73,52 @@ export const ContactSection = () => {
         <div>
           <div className="mb-4">
             <h2 className="text-lg text-primary mb-2 tracking-wider">
-              Contact
+              {contact.subtitle}
             </h2>
 
-            <h2 className="text-3xl md:text-4xl font-bold">Connect With Us</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">{contact.title}</h2>
           </div>
           <p className="mb-8 text-muted-foreground lg:w-5/6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            ipsam sint enim exercitationem ex autem corrupti quas tenetur
+            {contact.description}
           </p>
 
           <div className="flex flex-col gap-4">
             <div>
               <div className="flex gap-2 mb-1">
                 <Building2 />
-                <div className="font-bold">Find us</div>
+                <div className="font-bold">{contact.contactInfo.address.title}</div>
               </div>
 
-              <div>742 Evergreen Terrace, Springfield, IL 62704</div>
+              <div>{contact.contactInfo.address.value}</div>
             </div>
 
             <div>
               <div className="flex gap-2 mb-1">
                 <Phone />
-                <div className="font-bold">Call us</div>
+                <div className="font-bold">{contact.contactInfo.phone.title}</div>
               </div>
 
-              <div>+1 (619) 123-4567</div>
+              <div>{contact.contactInfo.phone.value}</div>
             </div>
 
             <div>
               <div className="flex gap-2 mb-1">
                 <Mail />
-                <div className="font-bold">Mail US</div>
+                <div className="font-bold">{contact.contactInfo.email.title}</div>
               </div>
 
-              <div>leomirandadev@gmail.com</div>
+              <div>{contact.contactInfo.email.value}</div>
             </div>
 
             <div>
               <div className="flex gap-2">
                 <Clock />
-                <div className="font-bold">Visit us</div>
+                <div className="font-bold">{contact.contactInfo.hours.title}</div>
               </div>
 
               <div>
-                <div>Monday - Friday</div>
-                <div>8AM - 4PM</div>
+                <div>{contact.contactInfo.hours.schedule}</div>
+                <div>{contact.contactInfo.hours.time}</div>
               </div>
             </div>
           </div>
@@ -129,9 +138,9 @@ export const ContactSection = () => {
                     name="firstName"
                     render={({ field }) => (
                       <FormItem className="w-full">
-                        <FormLabel>First Name</FormLabel>
+                        <FormLabel>{contact.form.firstName.label}</FormLabel>
                         <FormControl>
-                          <Input placeholder="Leopoldo" {...field} />
+                          <Input placeholder={contact.form.firstName.placeholder} {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -142,9 +151,9 @@ export const ContactSection = () => {
                     name="lastName"
                     render={({ field }) => (
                       <FormItem className="w-full">
-                        <FormLabel>Last Name</FormLabel>
+                        <FormLabel>{contact.form.lastName.label}</FormLabel>
                         <FormControl>
-                          <Input placeholder="Miranda" {...field} />
+                          <Input placeholder={contact.form.lastName.placeholder} {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -158,11 +167,11 @@ export const ContactSection = () => {
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Email</FormLabel>
+                        <FormLabel>{contact.form.email.label}</FormLabel>
                         <FormControl>
                           <Input
                             type="email"
-                            placeholder="leomirandadev@gmail.com"
+                            placeholder={contact.form.email.placeholder}
                             {...field}
                           />
                         </FormControl>
@@ -178,30 +187,22 @@ export const ContactSection = () => {
                     name="subject"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Subject</FormLabel>
+                        <FormLabel>{contact.form.subject.label}</FormLabel>
                         <Select
                           onValueChange={field.onChange}
                           defaultValue={field.value}
                         >
                           <FormControl>
                             <SelectTrigger>
-                              <SelectValue placeholder="Select a subject" />
+                              <SelectValue placeholder={contact.form.subject.placeholder} />
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent>
-                            <SelectItem value="Web Development">
-                              Web Development
-                            </SelectItem>
-                            <SelectItem value="Mobile Development">
-                              Mobile Development
-                            </SelectItem>
-                            <SelectItem value="Figma Design">
-                              Figma Design
-                            </SelectItem>
-                            <SelectItem value="REST API">REST API</SelectItem>
-                            <SelectItem value="FullStack Project">
-                              FullStack Project
-                            </SelectItem>
+                            {contact.form.subject.options.map((option) => (
+                              <SelectItem key={option.value} value={option.value}>
+                                {option.label}
+                              </SelectItem>
+                            ))}
                           </SelectContent>
                         </Select>
                         <FormMessage />
@@ -216,11 +217,11 @@ export const ContactSection = () => {
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Message</FormLabel>
+                        <FormLabel>{contact.form.message.label}</FormLabel>
                         <FormControl>
                           <Textarea
                             rows={5}
-                            placeholder="Your message..."
+                            placeholder={contact.form.message.placeholder}
                             className="resize-none"
                             {...field}
                           />
@@ -232,7 +233,7 @@ export const ContactSection = () => {
                   />
                 </div>
 
-                <Button className="mt-4">Send message</Button>
+                <Button className="mt-4">{contact.form.button}</Button>
               </form>
             </Form>
           </CardContent>

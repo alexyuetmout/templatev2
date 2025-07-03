@@ -56,5 +56,372 @@
         "description": "提供A/B測試和數據分析工具，幫助您驗證和優化各種營銷創意和策略。"
       }
     ]
+  },
+  "features": {
+    "show": true,
+    "subtitle": "產品特色",
+    "title": "我們的獨特優勢",
+    "description": "憑藉先進的技術和專業的團隊，我們為您提供卓越的產品體驗和全方位的解決方案，讓您在競爭中脫穎而出。",
+    "items": [
+      {
+        "icon": "TabletSmartphone",
+        "title": "移動端友好",
+        "description": "完美適配各種移動設備，確保用戶在任何螢幕尺寸下都能獲得優質的瀏覽體驗。"
+      },
+      {
+        "icon": "BadgeCheck",
+        "title": "社會認證",
+        "description": "通過真實的用戶評價和權威認證，建立強有力的社會信任和品牌可信度。"
+      },
+      {
+        "icon": "Goal",
+        "title": "精準內容",
+        "description": "基於用戶需求和行為分析，提供個性化的內容推薦和精準的信息傳達。"
+      },
+      {
+        "icon": "PictureInPicture",
+        "title": "強大視覺",
+        "description": "採用專業的視覺設計和豐富的多媒體元素，打造震撼的視覺衝擊力和用戶體驗。"
+      },
+      {
+        "icon": "MousePointerClick",
+        "title": "清晰引導",
+        "description": "簡潔明了的操作引導和行動號召，幫助用戶快速完成目標轉化。"
+      },
+      {
+        "icon": "Newspaper",
+        "title": "清晰標題",
+        "description": "簡潔有力的標題和信息架構，讓用戶一目了然地理解產品價值和核心信息。"
+      }
+    ]
+  },
+  "services": {
+    "show": true,
+    "subtitle": "服務項目",
+    "title": "助力業務增長",
+    "description": "從市場營銷到營運策略，從銷售管理到戰略規劃，我們擁有專業的團隊和豐富的經驗，助您實現業務目標。",
+    "items": [
+      {
+        "title": "自定義域名整合",
+        "description": "支援自定義域名綁定，打造專屬品牌形象，提升企業信譽度。",
+        "pro": false
+      },
+      {
+        "title": "社交媒體整合",
+        "description": "無縫對接主流社交平台，實現多渠道營銷推廣，擴大品牌影響力。",
+        "pro": false
+      },
+      {
+        "title": "電子郵件營銷整合",
+        "description": "強大的電子郵件營銷自動化功能，精準觸達目標客戶。",
+        "pro": false
+      },
+      {
+        "title": "SEO優化服務",
+        "description": "專業的搜索引擎優化服務，提升網站排名和流量。",
+        "pro": true
+      }
+    ]
+  },
+  "testimonials": {
+    "show": true,
+    "subtitle": "客戶評價",
+    "title": "聽聽我們1000+客戶的聲音",
+    "items": [
+      {
+        "image": "https://github.com/shadcn.png",
+        "name": "李明",
+        "userName": "產品經理",
+        "comment": "太棒了！NextJs + Shadcn 非常棒！這個模板讓我可以輕鬆更改顏色、字體和圖片來匹配我的品牌形象。",
+        "rating": 5.0
+      },
+      {
+        "image": "https://github.com/shadcn.png",
+        "name": "王麗華",
+        "userName": "網路安全分析師",
+        "comment": "介面設計簡潔優雅，功能強大實用。團隊協作效率提升了很多，強烈推薦給同行使用。",
+        "rating": 4.8
+      },
+      {
+        "image": "https://github.com/shadcn.png",
+        "name": "張偉強",
+        "userName": "技術總監",
+        "comment": "系統穩定性很好，響應速度快。技術架構設計合理，為我們的業務發展提供了強有力的支撐。",
+        "rating": 4.9
+      },
+      {
+        "image": "https://github.com/shadcn.png",
+        "name": "陳思雨",
+        "userName": "數據科學家",
+        "comment": "數據分析功能很全面，可視化效果出色。幫助我們更好地理解用戶行為，優化產品策略。",
+        "rating": 5.0
+      },
+      {
+        "image": "https://github.com/shadcn.png",
+        "name": "劉建國",
+        "userName": "專案經理",
+        "comment": "專案管理功能完善，團隊配合更加順暢。進度跟蹤清晰，大大提高了工作效率。",
+        "rating": 5.0
+      },
+      {
+        "image": "https://github.com/shadcn.png",
+        "name": "楊曉燕",
+        "userName": "維運工程師",
+        "comment": "部署簡單，維運便捷。監控功能齊全，讓我們能夠及時發現和解決問題，保障系統穩定運行。",
+        "rating": 4.9
+      }
+    ]
+  },
+  "community": {
+    "show": true,
+    "title": {
+      "prefix": "準備好加入這個",
+      "highlight": "社群了嗎？"
+    },
+    "description": "加入我們充滿活力的Discord社群！與志同道合的夥伴交流、分享和成長。點擊立即加入！🚀",
+    "button": {
+      "text": "加入Discord",
+      "href": "https://discord.com/"
+    }
+  },
+  "pricing": {
+    "show": true,
+    "subtitle": "價格方案",
+    "title": "獲得無限制訪問權限",
+    "description": "選擇最適合您需求的價格方案，享受我們的優質服務。",
+    "currency": {
+      "symbol": "$",
+      "period": "/月"
+    },
+    "plans": [
+      {
+        "title": "免費版",
+        "popular": false,
+        "price": 0,
+        "description": "適合個人用戶和小型專案，提供基礎功能體驗。",
+        "buttonText": "開始免費試用",
+        "benefitList": [
+          "1 名團隊成員",
+          "1 GB 儲存空間", 
+          "最多 2 個頁面",
+          "社群支援",
+          "AI 智能助手"
+        ]
+      },
+      {
+        "title": "高級版",
+        "popular": true,
+        "price": 45,
+        "description": "適合小型團隊和成長中的企業，功能更加完善。",
+        "buttonText": "立即開始",
+        "benefitList": [
+          "4 名團隊成員",
+          "8 GB 儲存空間",
+          "最多 6 個頁面", 
+          "優先技術支援",
+          "AI 智能助手"
+        ]
+      },
+      {
+        "title": "企業版",
+        "popular": false,
+        "price": 120,
+        "description": "適合大型企業，提供全面的功能和專業服務。",
+        "buttonText": "聯絡我們",
+        "benefitList": [
+          "10 名團隊成員",
+          "20 GB 儲存空間",
+          "最多 10 個頁面",
+          "電話和電子郵件支援",
+          "AI 智能助手"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "show": true,
+    "subtitle": "聯絡我們",
+    "title": "與我們取得聯繫",
+    "description": "我們期待與您的合作，無論是專案諮詢還是技術支援，請隨時與我們聯繫。",
+    "contactInfo": {
+      "address": {
+        "title": "找到我們",
+        "value": "台灣台北市信義區信義路五段7號"
+      },
+      "phone": {
+        "title": "致電我們",
+        "value": "+886 2 2345 6789"
+      },
+      "email": {
+        "title": "電子郵件",
+        "value": "contact@company.com"
+      },
+      "hours": {
+        "title": "營業時間",
+        "schedule": "週一至週五",
+        "time": "上午9點 - 下午6點"
+      }
+    },
+    "form": {
+      "firstName": {
+        "label": "名字",
+        "placeholder": "請輸入您的名字"
+      },
+      "lastName": {
+        "label": "姓氏",
+        "placeholder": "請輸入您的姓氏"
+      },
+      "email": {
+        "label": "電子郵箱",
+        "placeholder": "請輸入您的電子郵箱地址"
+      },
+      "subject": {
+        "label": "主題",
+        "placeholder": "請選擇諮詢主題",
+        "options": [
+          {
+            "value": "Web Development",
+            "label": "網站開發"
+          },
+          {
+            "value": "Mobile Development",
+            "label": "行動應用開發"
+          },
+          {
+            "value": "Figma Design",
+            "label": "UI/UX設計"
+          },
+          {
+            "value": "REST API",
+            "label": "API介面開發"
+          },
+          {
+            "value": "FullStack Project",
+            "label": "全端專案開發"
+          }
+        ]
+      },
+      "message": {
+        "label": "留言",
+        "placeholder": "請詳細描述您的需求..."
+      },
+      "button": "發送訊息"
+    }
+  },
+  "faq": {
+    "show": true,
+    "subtitle": "常見問題",
+    "title": "常見問題解答",
+    "items": [
+      {
+        "question": "這個模板是免費的嗎？",
+        "answer": "是的，這是一個免費的 NextJS Shadcn 模板。",
+        "value": "item-1"
+      },
+      {
+        "question": "如何自訂主題色彩和樣式？",
+        "answer": "您可以透過修改 globals.css 中的 CSS 變數來自訂主題色彩。我們使用了嚴格的 CSS 變數設計系統，支援亮色和暗色主題切換。",
+        "value": "item-2"
+      },
+      {
+        "question": "支援哪些語言和國際化功能？",
+        "answer": "目前支援英語、簡體中文和繁體中文。使用 next-i18n-router 實現多語言路由，支援動態語言切換和本地化內容管理。",
+        "value": "item-3"
+      },
+      {
+        "question": "如何部署這個專案到生產環境？",
+        "answer": "支援部署到 Vercel、Netlify 等平台。執行 pnpm build 構建生產版本，然後按照平台文件進行部署。",
+        "value": "item-4"
+      },
+      {
+        "question": "技術支援和文件在哪裡？",
+        "answer": "完整的文件包含在 CLAUDE.md 檔案中，包括開發指南、架構說明和最佳實踐。如需技術支援請透過聯絡表單聯繫我們。",
+        "value": "item-5"
+      }
+    ]
+  },
+  "footer": {
+    "show": true,
+    "brand": {
+      "name": "Shadcn",
+      "href": "#"
+    },
+    "sections": [
+      {
+        "title": "聯絡方式",
+        "links": [
+          {
+            "label": "Github",
+            "href": "#"
+          },
+          {
+            "label": "Twitter",
+            "href": "#"
+          },
+          {
+            "label": "Instagram",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "title": "平台支援",
+        "links": [
+          {
+            "label": "iOS",
+            "href": "#"
+          },
+          {
+            "label": "Android",
+            "href": "#"
+          },
+          {
+            "label": "Web",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "title": "幫助中心",
+        "links": [
+          {
+            "label": "聯絡我們",
+            "href": "#"
+          },
+          {
+            "label": "常見問題",
+            "href": "#"
+          },
+          {
+            "label": "意見回饋",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "title": "社群媒體",
+        "links": [
+          {
+            "label": "Twitch",
+            "href": "#"
+          },
+          {
+            "label": "Discord",
+            "href": "#"
+          },
+          {
+            "label": "Dribbble",
+            "href": "#"
+          }
+        ]
+      }
+    ],
+    "copyright": {
+      "text": "&copy; 2024 設計和開發者",
+      "author": {
+        "name": "Leo Miranda",
+        "href": "https://github.com/leoMirandaa"
+      }
+    }
   }
 }

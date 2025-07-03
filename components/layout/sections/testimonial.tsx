@@ -1,4 +1,5 @@
 "use client";
+
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   Card,
@@ -15,77 +16,27 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Star } from "lucide-react";
-
-interface ReviewProps {
-  image: string;
-  name: string;
-  userName: string;
-  comment: string;
-  rating: number;
-}
-
-const reviewList: ReviewProps[] = [
-  {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe",
-    userName: "Product Manager",
-    comment:
-      "Wow NextJs + Shadcn is awesome!. This template lets me change colors, fonts and images to match my brand identity. ",
-    rating: 5.0,
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Sophia Collins",
-    userName: "Cybersecurity Analyst",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. ",
-    rating: 4.8,
-  },
-
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Adam Johnson",
-    userName: "Chief Technology Officer",
-    comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    rating: 4.9,
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Ethan Parker",
-    userName: "Data Scientist",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    rating: 5.0,
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Ava Mitchell",
-    userName: "IT Project Manager",
-    comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud incididunt consectetur adipiscing elit.",
-    rating: 5.0,
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Isabella Reed",
-    userName: "DevOps Engineer",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    rating: 4.9,
-  },
-];
+import { useLangProviderContext } from "@/context/useLangProvider";
 
 export const TestimonialSection = () => {
+  const { $t } = useLangProviderContext();
+
+  // 安全检查，防止配置未加载时报错
+  if (!$t?.home?.testimonials?.show) {
+    return null;
+  }
+
+  const testimonials = $t.home.testimonials;
+
   return (
     <section id="testimonials" className="container py-24 sm:py-32">
       <div className="text-center mb-8">
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-          Testimonials
+          {testimonials.subtitle}
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-          Hear What Our 1000+ Clients Say
+          {testimonials.title}
         </h2>
       </div>
 
@@ -96,13 +47,13 @@ export const TestimonialSection = () => {
         className="relative w-[80%] sm:w-[90%] lg:max-w-screen-xl mx-auto"
       >
         <CarouselContent>
-          {reviewList.map((review) => (
+          {testimonials.items.map((review) => (
             <CarouselItem
               key={review.name}
               className="md:basis-1/2 lg:basis-1/3"
             >
-              <Card className="bg-muted/50 dark:bg-card">
-                <CardContent className="pt-6 pb-0">
+              <Card className="bg-muted/50 dark:bg-card h-full flex flex-col">
+                <CardContent className="pt-6 pb-4 flex-1">
                   <div className="flex gap-1 pb-6">
                     <Star className="size-4 fill-primary text-primary" />
                     <Star className="size-4 fill-primary text-primary" />
@@ -110,17 +61,18 @@ export const TestimonialSection = () => {
                     <Star className="size-4 fill-primary text-primary" />
                     <Star className="size-4 fill-primary text-primary" />
                   </div>
-                  {`"${review.comment}"`}
+                  <p className="line-clamp-4 text-sm text-muted-foreground leading-relaxed">
+                    {`"${review.comment}"`}
+                  </p>
                 </CardContent>
 
-                <CardHeader>
+                <CardHeader className="pt-0">
                   <div className="flex flex-row items-center gap-4">
                     <Avatar>
-                      <AvatarImage
-                        src="https://avatars.githubusercontent.com/u/75042455?v=4"
-                        alt="radix"
-                      />
-                      <AvatarFallback>SV</AvatarFallback>
+                      <AvatarImage src={review.image} alt={review.name} />
+                      <AvatarFallback>
+                        {review.name.charAt(0).toUpperCase()}
+                      </AvatarFallback>
                     </Avatar>
 
                     <div className="flex flex-col">

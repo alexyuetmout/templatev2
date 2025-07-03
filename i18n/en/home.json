@@ -56,5 +56,372 @@
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores."
       }
     ]
+  },
+  "features": {
+    "show": true,
+    "subtitle": "Features",
+    "title": "What Makes Us Different",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio facere tenetur.",
+    "items": [
+      {
+        "icon": "TabletSmartphone",
+        "title": "Mobile Friendly",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur."
+      },
+      {
+        "icon": "BadgeCheck",
+        "title": "Social Proof",
+        "description": "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam."
+      },
+      {
+        "icon": "Goal",
+        "title": "Targeted Content",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam."
+      },
+      {
+        "icon": "PictureInPicture",
+        "title": "Strong Visuals",
+        "description": "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam."
+      },
+      {
+        "icon": "MousePointerClick",
+        "title": "Clear CTA",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur."
+      },
+      {
+        "icon": "Newspaper",
+        "title": "Clear Headline",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur."
+      }
+    ]
+  },
+  "services": {
+    "show": true,
+    "subtitle": "Services",
+    "title": "Grow Your Business",
+    "description": "From marketing and sales to operations and strategy, we have the expertise to help you achieve your goals.",
+    "items": [
+      {
+        "title": "Custom Domain Integration",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing.",
+        "pro": false
+      },
+      {
+        "title": "Social Media Integrations",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, dicta.",
+        "pro": false
+      },
+      {
+        "title": "Email Marketing Integrations",
+        "description": "Lorem dolor sit amet adipisicing.",
+        "pro": false
+      },
+      {
+        "title": "SEO Optimization",
+        "description": "Lorem ipsum dolor sit amet consectetur.",
+        "pro": true
+      }
+    ]
+  },
+  "testimonials": {
+    "show": true,
+    "subtitle": "Testimonials",
+    "title": "Hear What Our 1000+ Clients Say",
+    "items": [
+      {
+        "image": "https://github.com/shadcn.png",
+        "name": "John Doe",
+        "userName": "Product Manager",
+        "comment": "Wow NextJs + Shadcn is awesome!. This template lets me change colors, fonts and images to match my brand identity.",
+        "rating": 5.0
+      },
+      {
+        "image": "https://github.com/shadcn.png",
+        "name": "Sophia Collins",
+        "userName": "Cybersecurity Analyst",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
+        "rating": 4.8
+      },
+      {
+        "image": "https://github.com/shadcn.png",
+        "name": "Adam Johnson",
+        "userName": "Chief Technology Officer",
+        "comment": "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "rating": 4.9
+      },
+      {
+        "image": "https://github.com/shadcn.png",
+        "name": "Ethan Parker",
+        "userName": "Data Scientist",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "rating": 5.0
+      },
+      {
+        "image": "https://github.com/shadcn.png",
+        "name": "Ava Mitchell",
+        "userName": "IT Project Manager",
+        "comment": "Lorem ipsum dolor sit amet, tempor incididunt aliqua. Ut enim ad minim veniam, quis nostrud incididunt consectetur adipiscing elit.",
+        "rating": 5.0
+      },
+      {
+        "image": "https://github.com/shadcn.png",
+        "name": "Isabella Reed",
+        "userName": "DevOps Engineer",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "rating": 4.9
+      }
+    ]
+  },
+  "community": {
+    "show": true,
+    "title": {
+      "prefix": "Ready to join this",
+      "highlight": "Community?"
+    },
+    "description": "Join our vibrant Discord community! Connect, share, and grow with like-minded enthusiasts. Click to dive in! 🚀",
+    "button": {
+      "text": "Join Discord",
+      "href": "https://discord.com/"
+    }
+  },
+  "pricing": {
+    "show": true,
+    "subtitle": "Pricing",
+    "title": "Get unlimitted access",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing reiciendis.",
+    "currency": {
+      "symbol": "$",
+      "period": "/month"
+    },
+    "plans": [
+      {
+        "title": "Free",
+        "popular": false,
+        "price": 0,
+        "description": "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+        "buttonText": "Start Free Trial",
+        "benefitList": [
+          "1 team member",
+          "1 GB storage", 
+          "Upto 2 pages",
+          "Community support",
+          "AI assistance"
+        ]
+      },
+      {
+        "title": "Premium",
+        "popular": true,
+        "price": 45,
+        "description": "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+        "buttonText": "Get started",
+        "benefitList": [
+          "4 team member",
+          "8 GB storage",
+          "Upto 6 pages", 
+          "Priority support",
+          "AI assistance"
+        ]
+      },
+      {
+        "title": "Enterprise",
+        "popular": false,
+        "price": 120,
+        "description": "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+        "buttonText": "Contact US",
+        "benefitList": [
+          "10 team member",
+          "20 GB storage",
+          "Upto 10 pages",
+          "Phone & email support",
+          "AI assistance"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "show": true,
+    "subtitle": "Contact",
+    "title": "Connect With Us",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ipsam sint enim exercitationem ex autem corrupti quas tenetur",
+    "contactInfo": {
+      "address": {
+        "title": "Find us",
+        "value": "742 Evergreen Terrace, Springfield, IL 62704"
+      },
+      "phone": {
+        "title": "Call us",
+        "value": "+1 (619) 123-4567"
+      },
+      "email": {
+        "title": "Mail US",
+        "value": "leomirandadev@gmail.com"
+      },
+      "hours": {
+        "title": "Visit us",
+        "schedule": "Monday - Friday",
+        "time": "8AM - 4PM"
+      }
+    },
+    "form": {
+      "firstName": {
+        "label": "First Name",
+        "placeholder": "Leopoldo"
+      },
+      "lastName": {
+        "label": "Last Name",
+        "placeholder": "Miranda"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "leomirandadev@gmail.com"
+      },
+      "subject": {
+        "label": "Subject",
+        "placeholder": "Select a subject",
+        "options": [
+          {
+            "value": "Web Development",
+            "label": "Web Development"
+          },
+          {
+            "value": "Mobile Development",
+            "label": "Mobile Development"
+          },
+          {
+            "value": "Figma Design",
+            "label": "Figma Design"
+          },
+          {
+            "value": "REST API",
+            "label": "REST API"
+          },
+          {
+            "value": "FullStack Project",
+            "label": "FullStack Project"
+          }
+        ]
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Your message..."
+      },
+      "button": "Send message"
+    }
+  },
+  "faq": {
+    "show": true,
+    "subtitle": "FAQS",
+    "title": "Common Questions",
+    "items": [
+      {
+        "question": "Is this template free?",
+        "answer": "Yes. It is a free NextJS Shadcn template.",
+        "value": "item-1"
+      },
+      {
+        "question": "Duis aute irure dolor in reprehenderit in voluptate velit?",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam consectetur sapiente, iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+        "value": "item-2"
+      },
+      {
+        "question": "Lorem ipsum dolor sit amet Consectetur natus dolor minus quibusdam?",
+        "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis.",
+        "value": "item-3"
+      },
+      {
+        "question": "Excepteur sint occaecat cupidata non proident sunt?",
+        "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        "value": "item-4"
+      },
+      {
+        "question": "Enim ad minim veniam, quis nostrud exercitation ullamco laboris?",
+        "answer": "consectetur adipisicing elit. Sint labore.",
+        "value": "item-5"
+      }
+    ]
+  },
+  "footer": {
+    "show": true,
+    "brand": {
+      "name": "Shadcn",
+      "href": "#"
+    },
+    "sections": [
+      {
+        "title": "Contact",
+        "links": [
+          {
+            "label": "Github",
+            "href": "#"
+          },
+          {
+            "label": "Twitter",
+            "href": "#"
+          },
+          {
+            "label": "Instagram",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "title": "Platforms",
+        "links": [
+          {
+            "label": "iOS",
+            "href": "#"
+          },
+          {
+            "label": "Android",
+            "href": "#"
+          },
+          {
+            "label": "Web",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "title": "Help",
+        "links": [
+          {
+            "label": "Contact Us",
+            "href": "#"
+          },
+          {
+            "label": "FAQ",
+            "href": "#"
+          },
+          {
+            "label": "Feedback",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "title": "Socials",
+        "links": [
+          {
+            "label": "Twitch",
+            "href": "#"
+          },
+          {
+            "label": "Discord",
+            "href": "#"
+          },
+          {
+            "label": "Dribbble",
+            "href": "#"
+          }
+        ]
+      }
+    ],
+    "copyright": {
+      "text": "&copy; 2024 Designed and developed by",
+      "author": {
+        "name": "Leo Miranda",
+        "href": "https://github.com/leoMirandaa"
+      }
+    }
   }
 }
